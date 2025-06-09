@@ -1,0 +1,7 @@
+-   id: beman-tidy
+    name: beman-tidy
+    description: "Checks the Beman Standard for a repository."
+    entry: ./tools/beman-tidy/beman-tidy
+    args: [--verbose]
+    language: python
+    types: [repository]
