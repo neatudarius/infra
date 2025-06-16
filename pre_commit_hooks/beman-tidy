@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Get the absolute path to the beman-tidy script.
+BEMAN_TIDY_SCRIPT_PATH=$(dirname "$0")
+BEMAN_TIDY_SCRIPT_PATH=$(realpath "$BEMAN_TIDY_SCRIPT_PATH")
+BEMAN_TIDY_SCRIPT_PATH="$BEMAN_TIDY_SCRIPT_PATH/../tools/beman-tidy/beman-tidy"
+
+# Run the beman-tidy script.
+exec "$BEMAN_TIDY_SCRIPT_PATH" "$@"
