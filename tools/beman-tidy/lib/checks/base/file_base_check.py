@@ -62,7 +62,7 @@ class FileBaseCheck(BaseCheck):
         try:
             with open(self.path, 'r') as file:
                 return file.read()
-        except Exception as e:
+        except Exception:
             return ""
 
     def read_lines(self):
@@ -72,7 +72,7 @@ class FileBaseCheck(BaseCheck):
         try:
             with open(self.path, 'r') as file:
                 return file.readlines()
-        except Exception as e:
+        except Exception:
             return []
 
     def read_lines_strip(self):
