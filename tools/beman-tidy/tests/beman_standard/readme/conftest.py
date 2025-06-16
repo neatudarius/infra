@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 # SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
 
-import os
 import pytest
 from pathlib import Path
 
