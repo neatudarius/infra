@@ -1,6 +1,6 @@
 - id: beman-tidy
   name: "beman-tidy: The Codebase Bemanification Tool"
-  entry: pwd && uv run beman-tidy
+  entry: uv run beman-tidy
   language: system
   pass_filenames: false
   always_run: true

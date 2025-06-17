@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "infra"
+version = "0.1.0"
+description = "Beman infra tooling"
+requires-python = ">=3.13"
+dependencies = [
+     "beman-tidy"
+]
+
+[project.scripts]
+beman-tidy = "beman_tidy:main"
+
+[tool.setuptools]
+packages = []
+
+[tool.uv.sources]
+beman-tidy = { path = "./tools/beman-tidy" } 

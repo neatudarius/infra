@@ -23,8 +23,8 @@ Limitations:
 ## Tree structure
 
 * `beman-tidy`: A Python script that is used to check and apply the Beman Standard to a repository.
-* `.beman-standard.yml`: Stable version of the standard; the tool does not fetch the latest unstable version of the standard.
 * `lib/`: The library for the beman-tidy tool (e.g, checks, utils, etc.).
+* `libs/.beman-standard.yml`: Stable version of the standard; the tool does not fetch the latest unstable version of the standard.
    * `lib/checks/beman_standard/`: Direct implementation of the checks from the standard (e.g, `lib/checks/beman_standard/readme.py` is the implementation of the `README.md` checks).
    * `lib/checks/base/`: Base classes for the checks - not to be used directly.
    * `lib/pipeline.py`: The pipeline for the `beman-tidy` tool.

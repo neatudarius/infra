@@ -9,14 +9,20 @@ maintainers = [{ name = "Rishyak", email = "hello@rishyak.com" }]
 dependencies = ["gitpython==3.1.44", "pyyaml==6.0.2"]
 
 [build-system]
-requires = ["flit_core >=3.2,<4"]
-build-backend = "flit_core.buildapi"
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
 
 [dependency-groups]
 dev = ["pytest>=8.4.0", "ruff>=0.11.13"]
 
 [project.scripts]
 beman-tidy = "beman_tidy.cli:main"
+
+[tool.setuptools]
+py-modules = ["beman_tidy"]
+
+[tool.setuptools.packages.find]
+include = ["lib*"]
 
 [tool.pytest.ini_options]
 addopts = "-v"
