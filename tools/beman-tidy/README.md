@@ -52,7 +52,7 @@ Note: `2025-06-07`: In order to make the best and quickly use of the tool in the
   Coverage: 66.67% (2/3 checks passed).
 
   # verbose mode - no errors
-  $ ./beman-tidy /path/to/exemplar --verbose
+  $ uv run beman-tidy /path/to/exemplar --verbose
   beman-tidy pipeline started ...
 
     Running check [RECOMMENDATION][README.TITLE] ...
@@ -76,7 +76,7 @@ Note: `2025-06-07`: In order to make the best and quickly use of the tool in the
 - Run beman-tidy in verbose mode
 
   ```console
-  $ ./beman-tidy /path/to/exemplar --verbose
+  $ uv run /path/to/exemplar --verbose
   beman-tidy pipeline started ...
 
   Running check [RECOMMENDATION][README.TITLE] ...
