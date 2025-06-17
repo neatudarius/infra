@@ -48,7 +48,7 @@ $ uv run ruff check --fix
 Run the tests:
 
 ```shell
-$ uv run pytest -v
+$ uv run pytest
 ================================================================================================================ test session starts ================================================================================================================
 platform darwin -- Python 3.14.0b2, pytest-8.4.0, pluggy-1.6.0 -- /Users/dariusn/dev/dn/git/Beman/infra/tools/beman-tidy/.venv/bin/python
 cachedir: .pytest_cache
