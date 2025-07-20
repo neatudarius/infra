@@ -8,6 +8,8 @@ on:
       - main
   pull_request:
   workflow_dispatch:
+  schedule:
+    - cron: '0 5 * * *' # 08:00AM EEST (@neatudarius' timezone) -> 05:00AM UTC
 
 jobs:
   tests:
